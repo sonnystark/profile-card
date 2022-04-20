@@ -5,17 +5,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Profile Card</title>
 </head>
 
 <body>
-  <card>
-    <h1 class="card-title">Profile Card</h1>
-    <!-- <p>I love you so much!</p> -->
-  </card>
 
-  <script src="script.js"></script>
-</body>
+  <body>
+    <div class="card">
+
+      <!-- Card header -->
+      <div class="card-header">
+        <img class="card-header-img" src="" alt="">
+      </div>
+
+      <!-- User information -->
+      <div class="content">
+        <div class="profile">
+          <img class="profile-img" src="" alt="">
+        </div>
+        <div class="header">
+          <h2 class="name"></h2>
+          <p class='location'></p>
+        </div>
+        <div class="info">
+          <p class="description"></p>
+        </div>
+        <div class="labels">
+          <div class="label-item">
+            <p>Phone:</p>
+            <h2 class="phone"></h2>
+          </div>
+          <div class="label-item">
+            <p>GitHub:</p>
+            <h2 class="github"></h2>
+          </div>
+          <div class="label-item">
+            <p>E-mail:</p>
+            <h2 class="email"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 
 </html>
