@@ -1,7 +1,10 @@
+body {
+  background: #eee;
+}
 h2,
 p {
-  font-family: "Lato", serif;
-  font-size: 16px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
 }
 
 h2 {
@@ -14,8 +17,10 @@ p {
 
 .card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #fff;
   border-radius: 5px;
-  border-top: solid 4px #cf1124;
+  border-top: solid 2px #cf1124;
+  border-bottom: solid 2px #cf1124;
   height: 382px;
   margin: 0 auto;
   position: relative;
@@ -23,16 +28,69 @@ p {
 }
 
 .card-header {
-  background-image: url("https://picsum.photos/480/382/?random");
-  background-size: cover;
+  background-image: url("https://picsum.photos/480/136/?random");
+  background-size: contain;
   background-position: center;
   height: 136px;
 }
 
+.content {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.profile {
+  position: absolute;
+  top: 78.5px;
+  left: 20px;
+}
+
+.profile img {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 50%;
+  height: 115px;
+}
+
+.header {
+  max-width: 190px;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.header .name {
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.header .location {
+  margin-top: 0.1rem;
+  margin-bottom: 0px;
+}
+
+.info {
+  margin-top: 1rem;
+}
+
 .labels {
   display: flex;
+  margin-top: 2rem;
 }
 
 .labels .label-item {
   flex-grow: 1;
+  word-wrap: break-word;
+  width: 0;
+}
+
+.labels .label-item p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.labels .label-item h2 {
+  margin: 0px;
+  font-size: 12px;
 }
